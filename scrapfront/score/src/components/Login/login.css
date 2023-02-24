@@ -1,0 +1,54 @@
+.login_img {
+    width: 50vw;
+    height: auto;
+}
+
+@media (max-width:992px) {
+    .login_img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.form-control {
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
+    height: 45px;
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(87, 66, 206);
+
+
+
+}
+
+.form-label {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+
+.form-control::placeholder {
+    color: rgb(216, 126, 171);
+    font-family: 'Zeyada', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border: none;
+    color: rgb(87, 66, 206);
+    box-shadow: none;
+    font-size: 20px;
+    border-bottom: 1px solid #333;
+}
+
+input:focus {
+    outline: none !important;
+}
