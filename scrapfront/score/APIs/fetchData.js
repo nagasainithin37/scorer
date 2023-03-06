@@ -14,7 +14,7 @@ fetchapp.get('/cc/:username',expressAsyncHandler(async(req,responce)=>{
     let resObj={}
     const res= await axios(URL)
 
-
+    resObj['username']=req.params.username
     // const body=await res.text()
     const $ =cheerio.load(res.data)
 
@@ -109,7 +109,7 @@ fetchapp.get('/cf/:username',expressAsyncHandler(async(req,res)=>{
     const URL='https://codeforces.com/profile/'+req.params.username
     console.log(URL)
     const result=await axios.get(URL)
-    resObj={}
+    var resObj={}
     const $=cheerio.load(result.data)
 
     //UserName

@@ -20,6 +20,14 @@ export const userLogin=createSlice({
     reducers:{
         setIsError:(state)=>{
             state.isError=false;
+        },
+        signOut:(state)=>{
+            state.isError=false;
+            state.isPending=false
+            state.isSuccess=false
+            state.login={};
+            state.errMsg='';
+            localStorage.clear()
         }
     },
     extraReducers:{
@@ -47,5 +55,5 @@ export const userLogin=createSlice({
     }
 })
 
-export const {setIsError}=userLogin.actions
+export const {setIsError,signOut}=userLogin.actions
 export default userLogin.reducer

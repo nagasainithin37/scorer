@@ -31,7 +31,7 @@ function Login() {
 
     var onFormSubmit=(obj)=>{
         setLoading(true)
-        console.log(obj)
+      
         dispatch(Loginn(obj))
     }
 

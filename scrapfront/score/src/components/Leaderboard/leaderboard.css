@@ -1,0 +1,17 @@
+table{
+    min-width: max-content;
+
+}
+
+.tab{
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.pos-sti{
+
+    position: sticky;
+    left: 0;
+    background-color: #333!important;
+    color: antiquewhite!important;
+}
